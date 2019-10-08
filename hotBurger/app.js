@@ -10,10 +10,10 @@ app.set("port", 80);
 app.use(morgan(':method :url :status :res[content-length] - :response-time ms', {stream: logStream}));
  
 app.get("/version", function(req, res) {
-	res.send("This is hotBurger version 1");
+	res.send("This is version 0 of the HotBurger service");
 });
 app.get("/logs", function(req, res) {
-	let r = fs.readFileSync("./log.txt", "UTF8");
+	let r = fs.readFileSync("<p>./log.txt</p>", "UTF8");
 	res.send(r);
 });
  
