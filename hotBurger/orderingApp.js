@@ -6,6 +6,7 @@ const json = require("morgan-json");
 
 let logStream = fs.createWriteStream("./log.json", {flags: "a"});
 const format = json({
+	Date: ":date[web]",
 	Method: ":method",
 	Route: ":url",
 	Status: ":status",

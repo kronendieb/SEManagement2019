@@ -12,6 +12,7 @@
     "express": "^4.17.1",
     "fs": "0.0.1-security",
     "morgan": "^1.9.1",
-    "morgan-json": "^1.1.0"
+    "morgan-json": "^1.1.0",
+    "read-last-lines": "^1.7.1"
   }
 }

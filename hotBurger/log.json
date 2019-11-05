@@ -1,20 +1,13 @@
-
-{"Method":"GET","Route":"/purchase/Hotdog/2","Status":"404","Response":"156","Response_time":"4.932 ms"}
-{"Method":"GET","Route":"/purchase/Hotdog/2","Status":"404","Response":"156","Response_time":"0.330 ms"}
-{"Method":"GET","Route":"/purchase/Hotdog/2","Status":"404","Response":"156","Response_time":"0.274 ms"}
-{"Method":"GET","Route":"/version","Status":"304","Response":"-","Response_time":"1.989 ms"}
-{"Method":"GET","Route":"/purchase","Status":"404","Response":"147","Response_time":"0.113 ms"}
-{"Method":"GET","Route":"/getmenu","Status":"304","Response":"-","Response_time":"0.264 ms"}
-{"Method":"GET","Route":"/purchase/Hotdog/2","Status":"404","Response":"156","Response_time":"2.039 ms"}
-{"Method":"GET","Route":"/purchase/Hotdog/2","Status":"404","Response":"156","Response_time":"1.955 ms"}
-{"Method":"GET","Route":"/purchase/Hotdog/2","Status":"404","Response":"156","Response_time":"0.295 ms"}
-{"Method":"GET","Route":"/purchase/Hotdog/2","Status":"404","Response":"156","Response_time":"1.899 ms"}
-{"Method":"GET","Route":"/purchase/Hotdog/2","Status":"404","Response":"156","Response_time":"2.095 ms"}
-{"Method":"GET","Route":"/purchase/Hotdog/2","Status":"404","Response":"21","Response_time":"2.506 ms"}
-{"Method":"GET","Route":"/purchase/:Hotdog/:2","Status":"404","Response":"21","Response_time":"0.195 ms"}
-{"Method":"GET","Route":"/purchase/item/quantity","Status":"404","Response":"21","Response_time":"2.792 ms"}
-{"Method":"GET","Route":"/purchase/item/quantity","Status":"404","Response":"21","Response_time":"0.301 ms"}
-{"Method":"GET","Route":"/purchase/item/quantity","Status":"404","Response":"21","Response_time":"2.140 ms"}
-{"Method":"GET","Route":"/purchase/Hotdog/4","Status":"404","Response":"21","Response_time":"0.207 ms"}
-{"Method":"GET","Route":"/purchase/Hotdog/4","Status":"404","Response":"21","Response_time":"3.007 ms"}
-{"Method":"GET","Route":"/purchase/Hotdog/4","Status":"200","Response":"29","Response_time":"4.441 ms"}
+{"Date":"Tue, 05 Nov 2019 22:08:51 GMT","Method":"GET","Route":"/getlastrequeststatus","Status":"500","Response":"1319","Response_time":"3.849 ms"}
+{"Date":"Tue, 05 Nov 2019 22:09:13 GMT","Method":"GET","Route":"/getlastrequeststatus","Status":"200","Response":"3","Response_time":"27.943 ms"}
+{"Date":"Tue, 05 Nov 2019 22:09:44 GMT","Method":"GET","Route":"/getlastrequeststatus","Status":"200","Response":"3","Response_time":"7.624 ms"}
+{"Date":"Tue, 05 Nov 2019 22:09:45 GMT","Method":"GET","Route":"/getlastrequeststatus","Status":"304","Response":"-","Response_time":"7.242 ms"}
+{"Date":"Tue, 05 Nov 2019 22:09:58 GMT","Method":"GET","Route":"/getlastrequesttime","Status":"200","Response":"29","Response_time":"5.938 ms"}
+{"Date":"Tue, 05 Nov 2019 22:10:02 GMT","Method":"GET","Route":"/getlastrequesttime","Status":"200","Response":"29","Response_time":"7.897 ms"}
+{"Date":"Tue, 05 Nov 2019 22:10:03 GMT","Method":"GET","Route":"/getlastrequesttime","Status":"200","Response":"29","Response_time":"8.175 ms"}
+{"Date":"Tue, 05 Nov 2019 22:10:04 GMT","Method":"GET","Route":"/getlastrequesttime","Status":"200","Response":"29","Response_time":"7.110 ms"}
+{"Date":"Tue, 05 Nov 2019 22:10:05 GMT","Method":"GET","Route":"/getlastrequesttime","Status":"200","Response":"29","Response_time":"7.749 ms"}
+{"Date":"Tue, 05 Nov 2019 22:10:06 GMT","Method":"GET","Route":"/getlastrequesttime","Status":"200","Response":"29","Response_time":"8.884 ms"}
+{"Date":"Tue, 05 Nov 2019 22:10:06 GMT","Method":"GET","Route":"/getlastrequesttime","Status":"200","Response":"29","Response_time":"6.726 ms"}
+{"Date":"Tue, 05 Nov 2019 22:10:07 GMT","Method":"GET","Route":"/getlastrequesttime","Status":"304","Response":"-","Response_time":"7.658 ms"}
+{"Date":"Tue, 05 Nov 2019 22:10:07 GMT","Method":"GET","Route":"/getlastrequesttime","Status":"200","Response":"29","Response_time":"8.558 ms"}
