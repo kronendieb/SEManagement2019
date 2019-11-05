@@ -1,0 +1,20 @@
+
+{"Method":"GET","Route":"/purchase/Hotdog/2","Status":"404","Response":"156","Response_time":"4.932 ms"}
+{"Method":"GET","Route":"/purchase/Hotdog/2","Status":"404","Response":"156","Response_time":"0.330 ms"}
+{"Method":"GET","Route":"/purchase/Hotdog/2","Status":"404","Response":"156","Response_time":"0.274 ms"}
+{"Method":"GET","Route":"/version","Status":"304","Response":"-","Response_time":"1.989 ms"}
+{"Method":"GET","Route":"/purchase","Status":"404","Response":"147","Response_time":"0.113 ms"}
+{"Method":"GET","Route":"/getmenu","Status":"304","Response":"-","Response_time":"0.264 ms"}
+{"Method":"GET","Route":"/purchase/Hotdog/2","Status":"404","Response":"156","Response_time":"2.039 ms"}
+{"Method":"GET","Route":"/purchase/Hotdog/2","Status":"404","Response":"156","Response_time":"1.955 ms"}
+{"Method":"GET","Route":"/purchase/Hotdog/2","Status":"404","Response":"156","Response_time":"0.295 ms"}
+{"Method":"GET","Route":"/purchase/Hotdog/2","Status":"404","Response":"156","Response_time":"1.899 ms"}
+{"Method":"GET","Route":"/purchase/Hotdog/2","Status":"404","Response":"156","Response_time":"2.095 ms"}
+{"Method":"GET","Route":"/purchase/Hotdog/2","Status":"404","Response":"21","Response_time":"2.506 ms"}
+{"Method":"GET","Route":"/purchase/:Hotdog/:2","Status":"404","Response":"21","Response_time":"0.195 ms"}
+{"Method":"GET","Route":"/purchase/item/quantity","Status":"404","Response":"21","Response_time":"2.792 ms"}
+{"Method":"GET","Route":"/purchase/item/quantity","Status":"404","Response":"21","Response_time":"0.301 ms"}
+{"Method":"GET","Route":"/purchase/item/quantity","Status":"404","Response":"21","Response_time":"2.140 ms"}
+{"Method":"GET","Route":"/purchase/Hotdog/4","Status":"404","Response":"21","Response_time":"0.207 ms"}
+{"Method":"GET","Route":"/purchase/Hotdog/4","Status":"404","Response":"21","Response_time":"3.007 ms"}
+{"Method":"GET","Route":"/purchase/Hotdog/4","Status":"200","Response":"29","Response_time":"4.441 ms"}
