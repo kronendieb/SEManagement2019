@@ -1,39 +1,29 @@
-version '3'
+version: '3'
 services:
-    orderingService:
+    ordering:
         build: 
             context: ./Ordering
             args:
                 buildno: 1
         volumes:
-            type: volume
-            source: logs
-            target: ./log.json
-
-            type: volume
-            source: orders
-            target: ./orderType.json
+            - /home/ec2-user/SEManagement2019/hotBurger/log.json:/home/ec2-user/SEManagement2019/hotBurger/log.json
+            - /home/ec2-user/SEManagement2019/hotBurger/orderType.json:/home/ec2-user/SEManagement2019/hotBurger/orderType.json
         ports:
-            "80:80"
-        espose:
-            "80"
-    monitoringService:
+            - "80:80"
+        expose:
+            - "80"
+    monitoring:
         build: 
             context: ./Monitoring
             args:
                 buildno: 1
         volumes:
-            type: volume
-            source: logs
-            target: ./log.json
-
-            type: volume
-            source: orders
-            target: ./orderType.json
+            - /home/ec2-user/SEManagement2019/hotBurger/orderType.json:/home/ec2-user/SEManagement2019/hotBurger/orderType.json
+            - /home/ec2-user/SEManagement2019/hotBurger/log.json:/home/ec2-user/SEManagement2019/hotBurger/log.json
         ports:
-            "8080:8080"
+            - "8080:8080"
         expose:
-            "8080"
+            - "8080"
     cache:
         image: "redis:latest"
 
