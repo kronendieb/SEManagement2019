@@ -3,11 +3,12 @@ FROM nginx:alpine
 # Install dependencies
 RUN apk update && apk add --virtual native-deps\
 	g++ gcc libgcc libstdc++ linux-headers autoconf automake make nasm python git npm nodejs && \
-	npm install --quiet node-gyp -g
+	npm install --quiet node-gyp -g\
 
 RUN mkdir hotBurger
 
 COPY ./orderingApp.js ./hotBurger/app.js
+COPY ./../node_modules/ ./node_modules/
 WORKDIR ./hotBurger
 
 RUN npm install --production
