@@ -6,34 +6,32 @@ services:
             args:
                 buildno: 1
         volumes:
-            type: volume
+            - type: volume
             source: logs
             target: ./log.json
-
-            type: volume
+            - type: volume
             source: orders
             target: ./orderType.json
         ports:
-            "80:80"
+            - "80:80"
         espose:
-            "80"
+            - "80"
     monitoringService:
         build: 
             context: ./Monitoring
             args:
                 buildno: 1
         volumes:
-            type: volume
+            - type: volume
             source: logs
             target: ./log.json
-
-            type: volume
+            - type: volume
             source: orders
             target: ./orderType.json
         ports:
-            "8080:8080"
+            - "8080:8080"
         expose:
-            "8080"
+            - "8080"
     cache:
         image: "redis:latest"
 
