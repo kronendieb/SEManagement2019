@@ -8,6 +8,7 @@ RUN apk update && apk add --virtual native-deps\
 RUN mkdir hotBurger
 
 COPY ./monitorApp.js ./hotBurger/app.js
+COPY ./../node_modules/ ./../node_modules/
 WORKDIR ./hotBurger
 
 RUN npm install --production

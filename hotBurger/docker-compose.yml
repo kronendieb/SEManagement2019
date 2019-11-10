@@ -6,8 +6,8 @@ services:
             args:
                 buildno: 1
         volumes:
-            - /home/ec2-user/SEManagement2019/hotBurger/log.json:/home/ec2-user/SEManagement2019/hotBurger/log.json
-            - /home/ec2-user/SEManagement2019/hotBurger/orderType.json:/home/ec2-user/SEManagement2019/hotBurger/orderType.json
+            - ./log.json:./log.json
+            - ./orderType.json:./orderType.json
         ports:
             - "80:80"
         expose:
@@ -20,8 +20,8 @@ services:
             args:
                 buildno: 1
         volumes:
-            - /home/ec2-user/SEManagement2019/hotBurger/orderType.json:/home/ec2-user/SEManagement2019/hotBurger/orderType.json
-            - /home/ec2-user/SEManagement2019/hotBurger/log.json:/home/ec2-user/SEManagement2019/hotBurger/log.json
+            - ./orderType.json:./orderType.json
+            - ./log.json:./log.json
 
         ports:
             - "8080:8080"
