@@ -13,6 +13,8 @@ services:
         expose:
             - "80"
     monitoring:
+
+    monitoringService:
         build: 
             context: ./Monitoring
             args:
@@ -20,6 +22,7 @@ services:
         volumes:
             - /home/ec2-user/SEManagement2019/hotBurger/orderType.json:/home/ec2-user/SEManagement2019/hotBurger/orderType.json
             - /home/ec2-user/SEManagement2019/hotBurger/log.json:/home/ec2-user/SEManagement2019/hotBurger/log.json
+
         ports:
             - "8080:8080"
         expose:
