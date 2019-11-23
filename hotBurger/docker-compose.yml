@@ -2,7 +2,8 @@ version: '3'
 services:
     ordering:
         build: 
-            context: ./Ordering
+            context: .
+            dockerfile: ./Ordering/Dockerfile
             args:
                 buildno: 1
         volumes:
@@ -10,26 +11,16 @@ services:
             - ./orderType.json:./orderType.json
         ports:
             - "80:80"
-        expose:
-            - "80"
     monitoring:
-
-    monitoringService:
         build: 
-            context: ./Monitoring
+            context: .
+            dockerfile: ./Monitor/Dockerfile
             args:
                 buildno: 1
         volumes:
             - ./orderType.json:./orderType.json
             - ./log.json:./log.json
-
         ports:
             - "8080:8080"
-        expose:
-            - "8080"
     cache:
         image: "redis:latest"
-
-volumes:
-    logs:
-    orders:
