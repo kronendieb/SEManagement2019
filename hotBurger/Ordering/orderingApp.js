@@ -35,6 +35,16 @@ app.get("/getmenu", (req, res) => {
 
 app.all("/purchase/:item/:quantity", (req, res) => {
 
+    var q = 0;
+    axios.post(`/getcount/${item}`)
+        .then((response) => {
+            q = response;
+        });
+
+    if(q < req.params.quantity){
+        res.send("There is not enough inventory");
+    }
+
 	let file = fs.readFileSync("./orderType.json", "utf8");
 	orders = JSON.parse(file);
 

@@ -3,6 +3,7 @@ const app = express();
 const morgan = require("morgan");
 const fs = require("fs");
 const json = require("morgan-json");
+const axios = require("axios");
 
 let logStream = fs.createWriteStream("./log.json", {flags: "a"});
 const format = json({
@@ -16,6 +17,7 @@ const format = json({
 
 const base = 10;
 const time = 4000;
+const maxQuantity = 40;
 app.set("port", 80);
 
 app.use(
@@ -23,7 +25,7 @@ app.use(
 );
 
 app.get("/getcount/:item", (req, res) => {
-    let file = fs.readFileSync("./availability.js", "utf8");
+    let file = fs.readFileSync("./availability.json", "utf8");
     avl = JSON.parse(file);
     var quantityAvl;
 
@@ -36,7 +38,7 @@ app.get("/getcount/:item", (req, res) => {
 });
 
 app.post("/setcount/:item/:quantity", (req, res) => {
-    let file = fs.readFileSync("./availability.js", "utf8");
+    let file = fs.readFileSync("./availability.json", "utf8");
     avl = JSON.parse(file);
     var quantityAvl;
 
@@ -49,8 +51,10 @@ app.post("/setcount/:item/:quantity", (req, res) => {
 });
 
 function timedRequest(){
-    var item = ""
-    axios.post('localhost:80/purchase/')
+    var item = "";
+    var quantity = Math.floor(Math.random() * maxQuantity);
+
+    axios.post(`/purchase/${item}/${quantity}`);
 }
 
 setTimeout(timedRequest, time);

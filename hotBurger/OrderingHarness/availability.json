@@ -1,0 +1,18 @@
+[
+    {
+        "name":  "Hotdog",
+        "quantity" : "10"
+    },
+    {
+        "name":  "Hamburger",
+        "quantity" : "20"
+    },
+    {
+        "name":  "Soda",
+        "quantity" : "100"
+    },
+    {
+        "name":  "Cookie",
+        "quantity" : "5"
+    }
+]
