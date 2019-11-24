@@ -8,7 +8,7 @@ RUN apk update && apk add --virtual native-deps\
 RUN mkdir hotBurger
 
 COPY ./orderingApp.js ./hotBurger/app.js
-COPY ./../node_modules/ ./node_modules/
+COPY ./../package.json/ ./package.json/
 WORKDIR ./hotBurger
 
 RUN npm install --production
