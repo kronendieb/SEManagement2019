@@ -37,12 +37,12 @@ app.get("/getmenu", (req, res) => {
 app.all("/purchase/:item/:quantity", (req, res) => {
 
     var q = 0;
-    axios.post(`/getcount/${item}`)
+    axios.post(`/getcount/${req.params.item}`)
         .then((response) => {
             q = response;
         });
 
-    if(q < req.params.quantity){
+    if(parseInt(q, base) < parseInt(req.params.quantity), base){
         res.send("There is not enough inventory");
     }
 

@@ -18,6 +18,7 @@ const format = json({
 const base = 10;
 const time = 4000;
 const maxQuantity = 40;
+const numItems = 4;
 app.set("port", 81);
 
 app.use(
@@ -51,10 +52,12 @@ app.post("/setcount/:item/:quantity", (req, res) => {
 });
 
 function timedRequest(){
-    var item = "";
+    let file = fs.readFileSync("./availability.json", "utf8");
+    item = JSON.parse(file);
+    let randItem = Math.floor(Math.random() * NumItems);
     var quantity = Math.floor(Math.random() * maxQuantity);
 
-    axios.post(`/purchase/${item}/${quantity}`);
+    axios.post(`/purchase/${item[randItem]}/${quantity}`);
 }
 
 setTimeout(timedRequest, time);
