@@ -19,31 +19,31 @@ const format = json({
 const base = 10;
 app.set("port", 8080);
 
-app.use( 
+app.use(
 	morgan(format, {stream: logStream})
 );
 
 app.get("/gettotal", function(req, res) {
 	let total = 0;
 	orders = JSON.parse(file);
-	
+
 	orders.forEach(item => {
 		total += item.quantity * item.price;
 	});
-	
+
 	res.send(`The total is: \$${total}`);
 });
- 
+
 app.get("/gettopseller", function(req, res) {
 	orders = JSON.parse(file);
 	let topSeller = orders[0];
-	
+
 	orders.forEach(item => {
 		if(item.quantity * item.price > topSeller.quantity * topSeller.price)
 		{
 				topSeller = item;
 		}
-	});	
+	});
 	res.send(`${topSeller.name} sold ${topSeller.quantity}`);
 });
 
